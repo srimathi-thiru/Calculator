@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calc">
+        <form>
+            <div class="dis1">
+                <input type="text" name="display" class="dis" readonly>
+            </div>
+            <div>
+                <button type="button" value='C' class="btn" id="b1" onclick="display.value='' ">C</button>
+                <button type="button" value='D' class="btn" id="b1" onclick="display.value=display.value.toString().slice(0,-1)" >D</button>
+                <button type="button" value='%' class="btn" id="b1" onclick="display.value +='%' " >%</button>
+                <button type="button" value='/' class="btn" id="b1" onclick="display.value +='/'" >/</button>
+            </div>
+            <div>
+                <button type="button" value='7' class="btn" onclick="display.value +='7'" >7</button>
+                <button type="button" value='8' class="btn" onclick="display.value +='8'" >8</button>
+                <button type="button" value='9' class="btn" onclick="display.value +='9'" >9</button>
+                <button type="button" value='*' class="btn" onclick="display.value +='*'" >*</button>
+            </div>
+            <div>
+                <button type="button" value='4' class="btn" onclick="display.value +='4'" >4</button>
+                <button type="button" value='5' class="btn" onclick="display.value +='5'" >5</button>
+                <button type="button" value='6' class="btn" onclick="display.value +='6'" >6</button>
+                <button type="button" value='-' class="btn" onclick="display.value +='-'" >-</button>
+            </div>
+            <div>
+                <button type="button" value='1' class="btn" onclick="display.value +='1'" >1</button>
+                <button type="button" value='2' class="btn" onclick="display.value +='2'" >2</button>
+                <button type="button" value='3' class="btn" onclick="display.value +='3' " >3</button>
+                <button type="button" value='+' class="btn" onclick="display.value +='+'" >+</button>
+            </div>
+            <div>
+                <button type="button" value='0' class="btn" onclick="display.value +='0'" >0</button>
+                <button type="button" value='.' class="btn" onclick="display.value +='.'" >.</button>
+                <button type="button" value='=' class="btneq" onclick="display.value=eval(display.value)">=</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
